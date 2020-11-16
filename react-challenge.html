@@ -1,9 +1,7 @@
 <!-- ASSESSMENT 2: React Debugging Challenge -->
 
 <!-- This React code is broken. Fix the THREE bugs in the code so the user can click through all the mood options.
-
 To see this component, drag the file into the browser.
-
 HINT: Check the console in the browser developer tools for errors. -->
 
 
@@ -35,24 +33,28 @@ HINT: Check the console in the browser developer tools for errors. -->
 
         handleMoodOptions = () => {
           let randomIndex = Math.floor(Math.random() * this.state.moods.length )
-          this.setState({ currentMood: moods[randomIndex] })
+          // second bug currentMood: moods[randomIndex], I need this.state
+          this.setState({ currentMood: this.state.moods[randomIndex] })
         }
 
         render(){
           return(
+            // first bug <> </> not declared.
+            <>
               <h1>Welcome to the Mood Meter App</h1>
-
               <h3>Mood Options:</h3>
 
-              <div style={{ fontSize: "40px", height: "50px"}}>
+              <div
+                style={{ fontSize: "40px", height: "50px"}}>
                 { this.state.currentMood }
               </div>
+            
 
-              <button onClick={ handleMoodOptions }>
+               <button onClick={ this.handleMoodOptions }>
                 Click Here For Next Mood option
-              </button>
+               </button>
 
-          )
+          </>)
         }
       }
 
