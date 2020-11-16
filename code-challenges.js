@@ -119,10 +119,18 @@ console.log(vow1(vowelTester2))
 
 // --------------------5) Create a function that takes three arguments - two numbers and a mathematical operation (+, -, *, /) and performs the given calculation. If the input tries to divide by 0, return: "Can't divide by 0!"
 
-const calculator = (arg1, oper, arg2) => {
-    // return `${arg1}${oper}${arg2}`
-    return myfunction(arg1operarg2)
-
+// function with 3 arguments, two numbers and the operator.
+const calculator = (arg1, oper, arg2) => { 
+    // I should define my 3 arguments
+    // let arg1 = number
+    // let arg2= number
+    // let oper = [+, -, /, *]
+    // I should define th datatype of the arguments
+    if ((arg2)==0 && (oper)== /) {
+    return "Can't divide by 0"
+    // line below returns just the Text, no math done, I will look into a built in method.
+        else  { `${arg1}${oper}${arg2}` }
+    }
 }
 
 
@@ -134,5 +142,5 @@ console.log(calculator(3, "*", 9))
 console.log(calculator(16, "+", 3))
 // Expected output: 19
 
-// console.log(calculator(89, "/", 0))
+console.log(calculator(89, "/", 0))
 // Expected output: "Can't divide by 0!"

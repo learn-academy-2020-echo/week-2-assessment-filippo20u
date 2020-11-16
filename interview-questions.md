@@ -10,14 +10,14 @@ Answer the following questions. First, without external resources. Challenge you
 
   Researched answer:
 
-Super is the syntax that allows to pass data or behaviour from a parent to child in react.
+Super is the syntax element that allows to pass data or behaviour from a parent to child in react.
 
 
 2. What is a virtual DOM?
 
   Your answer:
 
-it's a virtual page between teh code and the page visualized in the browser
+it's a virtual page between the code and the page visualized in the browser
 
   Researched answer:
 
@@ -29,12 +29,15 @@ it's a virtual page between teh code and the page visualized in the browser
 
   Your answer:
  
- when I create a component (.js file.), I need two elements to make react rendering it:
+ when I create a component (.js file), I need two elements to make react rendering it:
 
  put a reference in my <></> section th name of the component i.e. <> Component</> and at the top of the page import my component and its path.
 
 
   Researched answer:
+
+  to display a basic component I need to extend React.Component called render().
+
 
 
 
@@ -89,7 +92,7 @@ Research and define the following terms to the best of your ability.
 - React lifecycle methods:
 
  special methods on the component class to run some code when a component mounts and unmounts
- mounting is executed by constuctor and render or by another funxtion calld componentDidMount(), to unmount a compoent and removed from teh DOM teh command is componentWillUnbmount()
+ mounting is executed by constuctor and render or by another funxtion calld componentDidMount(), to unmount a component and removed from teh DOM teh command is componentWillUnbmount()
 
 - React props
 
